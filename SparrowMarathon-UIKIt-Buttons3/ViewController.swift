@@ -34,5 +34,13 @@ private extension ViewController {
             thirdButton.topAnchor.constraint(equalTo: secondButton.bottomAnchor, constant: 10),
             thirdButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
+        
+        thirdButton.addTarget(self, action: #selector(thirdButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc func thirdButtonTapped() {
+        let vc = UIViewController()
+        vc.view.backgroundColor = .white
+        present(vc, animated: true)
     }
 }
