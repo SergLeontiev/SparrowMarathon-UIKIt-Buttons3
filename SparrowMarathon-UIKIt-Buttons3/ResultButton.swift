@@ -84,7 +84,7 @@ private extension ResultButton {
 
 private extension ResultButton {
     enum Constants {
-        static let animationDuration: TimeInterval = 0.1
+        static let animationDuration: TimeInterval = 0.2
         static let animationOptions: UIView.AnimationOptions = [.beginFromCurrentState, .allowUserInteraction]
         static let scale: CGFloat = 0.9
         
